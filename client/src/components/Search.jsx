@@ -1,8 +1,12 @@
 
-
 function Search(props) {
   return ( 
-    <input/>
+    <input
+      type="text"
+      name="search"
+      value={props.search} 
+      onChange={(e) => props.handleChange(e)}
+      />
     
 
   )
