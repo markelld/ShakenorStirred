@@ -9,10 +9,10 @@ Shaken or Stirred ?
 This site consists of a catalog of classic coctails and Foxbar creations in two catagories Shaken or Stirred. The site has the functionality to edit, post and delete cocktail recipes.  
 
 ## Wireframes
-![Wireframes](https://github.com/markelld/Shaken-or-Stirred-/blob/main/wireframes.png)
+![Wireframes](https://github.com/markelld/ShakenorStirred/blob/main/wireframes.png)
 
 ## Component Hierarchy
-![Component Hierarchy](https://github.com/markelld/Shaken-or-Stirred-/blob/main/CH.png)
+![Component Hierarchy](https://github.com/markelld/ShakenorStirred/blob/main/CH.png)
 
 ## API and Data Sample
  
