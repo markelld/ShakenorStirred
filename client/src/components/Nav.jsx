@@ -4,10 +4,10 @@ import Search from "./Search";
 function Nav(props) {
   return (
     <nav className="navbar"> 
-      <Link to="/">Shaken or Stirred?</Link> 
-      <Link>New Cocktail</Link> 
-      <Link>Contact</Link> 
-      <Search
+      <Link className="hometext"  to="/">Shaken or Stirred?</Link> 
+      <Link to="/new">New Cocktail</Link> 
+      <Link to="/contact">Contact</Link> 
+      <Search classname="searchbar"
         handleChange={props.handleChange} 
         search={props.search}
         />

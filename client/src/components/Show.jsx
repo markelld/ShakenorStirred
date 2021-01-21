@@ -1,9 +1,15 @@
+//import { useEffect, useState } from "react";
+
 function Show(props) { 
   //console.log(props.shaken)  
   //console.log(props.stirred)
-  const { shaken, getShaken } = props 
-  
-  console.log(shaken)
+  const { shaken, getShaken } = props  
+  const { stirred, getStirred} = props
+  // useEffect(() => { 
+  //  console.log("Hi") 
+  //   setToggle(prev => !prev)
+  // }, []);
+  //console.log(shaken)
  
   return (
     <div>
@@ -11,10 +17,13 @@ function Show(props) {
       {shaken && <div>
       {shaken.map((cocktail, index) => {
         return (<div key={index}>{cocktail.fields.name}</div>)
-      })
-      }</div>}
+      })}</div>}  
       
-    </div>
+      {stirred && <div>
+      {stirred.map((cocktail, index) => {
+        return (<div key={index}>{cocktail.fields.name}</div>)
+      })}</div>}
+      </div>
   )
 } 
 

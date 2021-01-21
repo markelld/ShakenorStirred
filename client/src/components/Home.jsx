@@ -1,4 +1,4 @@
- import { Link, Route } from "react-router-dom";
+import { Link, Route } from "react-router-dom";
 import Search from "./Search";
 
 function Home(props) {
@@ -7,7 +7,8 @@ function Home(props) {
   return ( 
     <div> 
       <h1>Home</h1> 
-      {props.searchResults.map((cocktail, index) => (
+      
+      {props.searchResults && props.searchResults.map((cocktail, index) => (
         <div key={index}>{cocktail.fields.name }</div>
       ))}
 
@@ -17,7 +18,9 @@ function Home(props) {
         </Link>
         </button> 
       <button
-        onClick={() => props.getStirred()}>Stirred
+        onClick={() => props.getStirred()}><Link to="/show/stirred">
+          Stirred
+        </Link>
       </button>
     </div>
     

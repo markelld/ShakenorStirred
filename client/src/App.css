@@ -1,7 +1,32 @@
  .App {
-  text-align: center; 
-  font-family: 'Advent Pro', sans-serif;
+  font-family: 'Advent Pro', sans-serif; 
+  text-align:center;
 }
+.navbar {
+  display: flex; 
+  padding: 5px;
+  width: 100vw; 
+  height: 40px;
+  box-sizing: border-box;
+  justify-content: space-between;
+  background-color: #CE4257;  
+}  
+
+.hometext {
+  color:black; 
+  text-decoration: none; 
+  font-size: 20px; 
+  padding-bottom: 10px;
+}   
+.searchbar {
+  padding-right: 5px; 
+  border-radius: 10px;
+}
+
+/* .searchbar{
+  justify-content: flex-end;
+} */
+
 
 /* .App-logo {
   height: 40vmin;
