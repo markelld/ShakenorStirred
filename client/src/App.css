@@ -1,7 +1,15 @@
  .App {
   font-family: 'Advent Pro', sans-serif; 
-  text-align:center;
-}
+  text-align:center;  
+
+} 
+/* .body{  
+  display: flex; 
+  flex-direction:column; 
+  text-align:center;  
+  height: 100%;
+
+} */
 .navbar {
   display: flex; 
   padding: 5px;
@@ -21,7 +29,17 @@
 .searchbar {
   padding-right: 5px; 
   border-radius: 10px;
-}
+} 
+
+/* .Footer { 
+  display: flex;
+  padding: 5px;
+  width: 100vw; 
+  height: 60px;
+  box-sizing: border-box;
+  background-color: #CE4257; 
+
+} */
 
 /* .searchbar{
   justify-content: flex-end;

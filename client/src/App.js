@@ -3,15 +3,15 @@ import { baseURL, config } from "./services/index";
 import { Link, Route, useHistory } from "react-router-dom"; 
 import { useEffect, useState } from "react"; 
 import './App.css';
+
 import Home from "./components/Home";
 import Nav from "./components/Nav";  
-// import Recipe from "./components/Recipe"; 
+import Recipe from "./components/Recipe"; 
 import Show from "./components/Show";   
 import ShowStirred from "./components/ShowStirred";
-
 import Contact from "./components/Contact"; 
 import New from "./components/New";
-// import Footer from "./components/Footer"
+import Footer from "./components/Footer"
 
 function App() {  
   const [cocktails, setCocktails] = useState([]); 
@@ -45,7 +45,7 @@ function App() {
     setShaken(resultsShaken)
     const shakenCocktails = shaken
   }  
-   
+// function for stirred home button to search cocktail data and go to showpage 
   const getStirred = (stirredData) => {
     let data = stirredData || cocktails 
     const resultsStirred = data.filter(cocktail => cocktail.fields.type === "Stirred") 
@@ -76,50 +76,36 @@ function App() {
     <div className="App">  
       <Nav
         handleChange={handleChange} 
-          search={search} 
-      />
-
-      <Route exact path="/">
-        <Home 
-          getShaken={getShaken}  
-          getStirred={getStirred}
-          searchResults={searchResults}
-          
-
-        />
-      </Route> 
-      <Route path="/show/shaken/">
-        <Show
-          shaken={shaken}  
-          //setToggle={setToggle}
-          
-          //getShaken={getShaken}
-          //stirred={stirred}
+        search={search} /> 
+      <main className="body">
+        <Route exact path="/">
+          <Home 
+            getShaken={getShaken}  
+            getStirred={getStirred}
+            searchResults={searchResults}/>
+        </Route> 
+        <Route path="/show/shaken/">
+          <Show
+            shaken={shaken} />
+        </Route>  
+        <Route path="/showstirred">
+          <ShowStirred stirred={stirred}/>
+        </Route> 
+        <Route path="/contact">
+          <Contact />
+        </Route>  
+        <Route path="/new">
+          <New />
+        </Route>  
+        <Route path="/recipe" >
+          <Recipe
+            shaken={shaken} 
+            stirred={stirred}
           />
-      </Route>  
-      <Route path="/showstirred">
-        <ShowStirred
-          //shaken={shaken}  
-          //setToggle={setToggle}
-          
-          //getShaken={getShaken}
-          stirred={stirred}
-          />
-      </Route> 
-      
-      {/* <h1>Shaken or Stirred?</h1>  */}
-      {/* <Recipe /> 
-      <Contact />
-      <Footer/> */} 
-      <Route path="/contact">
-        <Contact />
-      </Route>  
-      <Route path="/new">
-        <New />
-      </Route> 
-
+        </Route>  
+      </main> 
+    {/* <Footer /> */}
     </div>
   );
 }
-
 export default App;

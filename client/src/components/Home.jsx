@@ -12,12 +12,12 @@ function Home(props) {
         <div key={index}>{cocktail.fields.name }</div>
       ))}
 
-      <button
+      <button className="shakenButton"
         onClick={() => props.getShaken()}><Link to="/show/shaken">
           Shaken
         </Link>
         </button> 
-      <button
+      <button className="stirredButton"
         onClick={() => props.getStirred()}><Link to="/showstirred">
           Stirred
         </Link>

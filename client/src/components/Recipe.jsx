@@ -1,40 +1,16 @@
 
 
 function Recipe(props) {
+  
+  // const { shaken, getShaken } = props  
+  // const { stirred, getStirred} = props
+  
   return (
     <div>
-      <form>
-        <h1>Recipe</h1> 
-        <label htmlFor="name">Name:</label> 
-        <input
-        // name="name"
-        // type="text"
-        // value={}
-        //onChange={(e) => (e.target.value)}
-        /> 
-        <label htmlFor="type">Shaken or Stirred?:</label> 
-        <input
-        // name="name"
-        // type="text"
-        // value={}
-        //onChange={(e) => (e.target.value)}
-        />
-        <label htmlFor="ingredients">Ingredients:</label> 
-        <input
-          // name="name"
-        // type="text"
-        // value={}
-        //onChange={(e) => (e.target.value)}
-        />
-        <label htmlFor="build">Build:</label> 
-        <input
-        // name="message"
-        // type="text"
-        // value={}
-        //onChange={(e) => (e.target.value)}
-        />
-        <button type="submit">new</button>
-      </form>
+      <h1>Name</h1> 
+      <h2>Type</h2> 
+      <h2>Ingredients</h2> 
+      <h2>Build</h2>
    </div>
   )
 } 

@@ -1,32 +1,22 @@
 //import { useEffect, useState } from "react";
+//import { Link, Route } from "react-router-dom";
 
 function Show(props) { 
-  //console.log(props.shaken)  
-  //console.log(props.stirred)
+  
   const { shaken, getShaken } = props  
-  const { stirred, getStirred} = props
-  // useEffect(() => { 
-  //  console.log("Hi") 
-  //   setToggle(prev => !prev)
-  // }, []);
-  //console.log(shaken) 
-  console.log(stirred)
  
-  return (
-    <div>
+  return ( 
+    //create onclick inside H1 that calls function to function and links to recipe page 
+    <div> 
       <h1>Shaken List</h1>   
       {shaken && <div>
       {shaken.map((cocktail, index) => {
-        return (<div key={index}>{cocktail.fields.name}</div>)
+        return (<div
+          //onClick={() => ........()} link tags goes around cocktail.feild.name
+          key={index}>{cocktail.fields.name}</div>)
       })}</div>}  
     </div>
   )
 } 
 
 export default Show; 
-
-{/* {stirred && <div>
-      {stirred.map((cocktail, index) => {
-        return (<div key={index}>{cocktail.fields.name}</div>)
-      })}</div>}
-      </div> */}

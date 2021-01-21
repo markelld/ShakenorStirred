@@ -1,21 +1,27 @@
+//import { Link, Route } from "react-router-dom";
+
+
+
+
 function ShowStirred(props) { 
-  //console.log(props.shaken)  
-  //console.log(props.stirred)
-  // const { shaken, getShaken } = props  
-  const { stirred, getStirred} = props
-  // useEffect(() => { 
-  //  console.log("Hi") 
-  //   setToggle(prev => !prev)
-  // }, []);
-  //console.log(shaken) 
+
+  const { stirred, getStirred } = props 
+  
+  // const stirredRecipe = () => {
+    
+
+  // }
+
+  //console.log(stirred)
   console.log(stirred)
- 
   return (
     <div> 
       <h1>Stirred</h1>
       {stirred && <div>
       {stirred.map((cocktail, index) => {
-        return (<div key={index}>{cocktail.fields.name}</div>)
+        return (<div
+          //onClick={() => ........()} link tags goes around cocktail.feild.name
+          key={index}>{cocktail.fields.name}</div>)
       })}</div>}
       </div>
   )
