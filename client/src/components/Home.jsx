@@ -18,7 +18,7 @@ function Home(props) {
         </Link>
         </button> 
       <button
-        onClick={() => props.getStirred()}><Link to="/show/stirred">
+        onClick={() => props.getStirred()}><Link to="/showstirred">
           Stirred
         </Link>
       </button>

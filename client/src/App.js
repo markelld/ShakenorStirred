@@ -6,7 +6,9 @@ import './App.css';
 import Home from "./components/Home";
 import Nav from "./components/Nav";  
 // import Recipe from "./components/Recipe"; 
-import Show from "./components/Show"; 
+import Show from "./components/Show";   
+import ShowStirred from "./components/ShowStirred";
+
 import Contact from "./components/Contact"; 
 import New from "./components/New";
 // import Footer from "./components/Footer"
@@ -46,7 +48,7 @@ function App() {
    
   const getStirred = (stirredData) => {
     let data = stirredData || cocktails 
-    const resultsStirred = data.filter(cocktail => cocktail.feilds.type === "Stirred") 
+    const resultsStirred = data.filter(cocktail => cocktail.fields.type === "Stirred") 
     setStirred(resultsStirred) 
     const stirredCocktails = stirred
   }
@@ -62,12 +64,11 @@ function App() {
     }
   }  
   const searchFilter = (value, cocktails) => { 
-    console.log(cocktails)
+    //console.log(cocktails)
     const resultsSearch = cocktails.filter(cocktail => cocktail.fields.name.toLowerCase().includes(value.toLowerCase())) 
-    console.log(resultsSearch)
+    //console.log(resultsSearch)
       setSearchResults(resultsSearch) 
     localStorage.setItem("searchString", value); 
-    
     }
   
 
@@ -87,15 +88,25 @@ function App() {
 
         />
       </Route> 
-      <Route path="/show/shaken/stirred">
+      <Route path="/show/shaken/">
         <Show
           shaken={shaken}  
           //setToggle={setToggle}
           
           //getShaken={getShaken}
+          //stirred={stirred}
+          />
+      </Route>  
+      <Route path="/showstirred">
+        <ShowStirred
+          //shaken={shaken}  
+          //setToggle={setToggle}
+          
+          //getShaken={getShaken}
           stirred={stirred}
           />
-      </Route>
+      </Route> 
+      
       {/* <h1>Shaken or Stirred?</h1>  */}
       {/* <Recipe /> 
       <Contact />
