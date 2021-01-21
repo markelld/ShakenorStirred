@@ -1,4 +1,4 @@
-// import { Link, Route } from "react-router-dom";
+ import { Link, Route } from "react-router-dom";
 import Search from "./Search";
 
 function Home(props) {
@@ -7,12 +7,18 @@ function Home(props) {
   return ( 
     <div> 
       <h1>Home</h1> 
-      <Search
-        handleChange={props.handleChange} 
-        search={props.search}
-        />
-      <button onClick={() => props.getShaken()}>Shaken</button> 
-      <button>Stirred</button>
+      {props.searchResults.map((cocktail, index) => (
+        <div key={index}>{cocktail.fields.name }</div>
+      ))}
+
+      <button
+        onClick={() => props.getShaken()}><Link to="/show/shaken">
+          Shaken
+        </Link>
+        </button> 
+      <button
+        onClick={() => props.getStirred()}>Stirred
+      </button>
     </div>
     
   )
