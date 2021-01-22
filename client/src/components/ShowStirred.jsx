@@ -1,4 +1,5 @@
 //import { Link, Route } from "react-router-dom";
+//import { useEffect, useState } from "react";
 
 
 
@@ -20,7 +21,7 @@ function ShowStirred(props) {
       {stirred && <div>
       {stirred.map((cocktail, index) => {
         return (<div
-          //onClick={() => ........()} link tags goes around cocktail.feild.name
+          //onClick={() => ........()} link tags goes around cocktail.field.name
           key={index}>{cocktail.fields.name}</div>)
       })}</div>}
       </div>

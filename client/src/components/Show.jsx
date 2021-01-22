@@ -12,7 +12,7 @@ function Show(props) {
       {shaken && <div>
       {shaken.map((cocktail, index) => {
         return (<div
-          //onClick={() => ........()} link tags goes around cocktail.feild.name
+          //onClick={() => ........()} link tags goes around cocktail.field.name
           key={index}>{cocktail.fields.name}</div>)
       })}</div>}  
     </div>
