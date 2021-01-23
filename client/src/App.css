@@ -1,8 +1,17 @@
  .App {
   font-family: 'Advent Pro', sans-serif; 
-  text-align:center; 
- } 
+  /* text-align:center;   
+  height:100%; */
+ }  
 
+main{ 
+  height: 200vh;
+  padding-left:15px; 
+  padding-right:15px; 
+  display:flex; 
+  justify-content: center;
+  background-color:#FDFFFC;
+}  
 
 /* .body{  
   display: flex; 
@@ -13,83 +22,69 @@
 } */
 .navbar {
   display: flex; 
-  padding: 5px;
-  width: 100vw; 
-  height: 40px;
-  box-sizing: border-box;
-  justify-content: space-between;
-  background-color: #CE4257;  
-}  
-
-.hometext {
-  color:black; 
-  text-decoration: none; 
-  font-size: 20px; 
-  padding-bottom: 10px;
-}   
-.searchbar {
-  padding-right: 5px; 
-  border-radius: 10px;
-} 
-
-/* .Footer { 
-  display: flex;
-  padding: 5px;
+  padding: 10px;
   width: 100vw; 
   height: 60px;
   box-sizing: border-box;
-  background-color: #CE4257; 
-
-} */
-
-/* .searchbar{
-  justify-content: flex-end;
-} */
-
-
-/* .App-logo {
-  height: 40vmin;
-  pointer-events: none;
+  justify-content:space-around;
+  background-color:#031926;    
+  font-family: 'Advent Pro', sans-serif; 
+}   
+.Footer {
+  display:flex; 
+  position: fixed;  
+  bottom:0; 
+  left:0;
+  right:0;
+  width: 100vw; 
+  height: 80px;
+  background-color: #031926;   
+  z-index: 1; 
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
+.hometext {
+  color:#EBEBD3; 
+  text-decoration: none; 
+  font-size: 20px; 
+  padding-bottom: 10px; 
+  font-weight: bold;
+}   
+.searchbar {
+  padding-right: 20px; 
+  border-radius: 10px;
+} 
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-} */ 
-button{
+  /* button{
   padding: 15px 25px; 
-  font-size: 10px;
+  font-size: 12px;
   cursor: pointer;
-  text-decoration: none;
   outline: none;
-  color: #fff;
+  color: white;
   background-color:#CE4257;
   border: none;
   border-radius: 15px;
-  box-shadow: 0 2px #999;
+  box-shadow: 0 2px #999; 
+  font-weight: bold;  
+}   */
+
+Button {
+  text-decoration: none;   
+  display:inline-flex; 
+  align-content:center;
 }
+
+.new {
+ display:inline-flex; 
+ padding:35px;
+ 
+}   
+.contact {
+  width:65vw; 
+  padding-top:40px; 
+
+} 
+
+.searchbar {
+  padding: 30px;
+}
+

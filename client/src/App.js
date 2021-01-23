@@ -1,6 +1,6 @@
 import axios from "axios";  
 import { baseURL, config } from "./services/index";  
-import { Link, Route, useHistory } from "react-router-dom"; 
+import { Route } from "react-router-dom"; 
 import { useEffect, useState } from "react"; 
 import './App.css';
 
@@ -19,9 +19,10 @@ function App() {
   const [stirred, setStirred] = useState([]);
   const [searchResults, setSearchResults] = useState([]);
   const [search, setSearch] = useState("");  
+  const [toggleFetch, setToggleFetch] = useState(false)
   //const [toggle, setToggle] = useState(false);
 
-  const history = useHistory();
+  // const history = useHistory();useHistory import react router dom
   
   useEffect(() => { 
     const getCocktails = async () => {
@@ -30,27 +31,27 @@ function App() {
       //console.log(resp.data.records) 
       getShaken(resp.data.records) 
       getStirred(resp.data.records)
-      if (localStorage.getItem('searchString').length > 0) { 
+      // if (localStorage.getItem('searchString').length > 0) { 
       
-        searchFilter(localStorage.getItem('searchString'),resp.data.records) 
+      //   searchFilter(localStorage.getItem('searchString'),resp.data.records) 
   
-      } 
+      // } 
     } 
-    getCocktails()   
-  }, []);  
+    getCocktails();   
+  }, [toggleFetch]); 
 // function for shaken home button to search cocktail data and go to showpage 
   const getShaken = (shakenData) => {
     let data = shakenData || cocktails
     const resultsShaken = data.filter(cocktail => cocktail.fields.type === "Shaken")
     setShaken(resultsShaken)
-    const shakenCocktails = shaken
+    //const shakenCocktails = shaken
   }  
 // function for stirred home button to search cocktail data and go to showpage 
   const getStirred = (stirredData) => {
     let data = stirredData || cocktails 
     const resultsStirred = data.filter(cocktail => cocktail.fields.type === "Stirred") 
     setStirred(resultsStirred) 
-    const stirredCocktails = stirred
+    //const stirredCocktails = stirred
   }
 
   const handleChange = (e) => { 
@@ -63,12 +64,16 @@ function App() {
 
     }
   }  
-  const searchFilter = (value, cocktails) => { 
+  const searchFilter = (value, cocktails) => {
     //console.log(cocktails)
-    const resultsSearch = cocktails.filter(cocktail => cocktail.fields.name.toLowerCase().includes(value.toLowerCase())) 
-    //console.log(resultsSearch)
-      setSearchResults(resultsSearch) 
-    localStorage.setItem("searchString", value); 
+    
+    
+      const resultsSearch = cocktails.filter(cocktail => cocktail.fields.name.toLowerCase().includes(value.toLowerCase()))
+      console.log(resultsSearch)
+      setSearchResults(resultsSearch)
+      // localStorage.setItem("searchString", value);
+    
+     
     }
   
 
@@ -95,16 +100,17 @@ function App() {
           <Contact />
         </Route>  
         <Route path="/new">
-          <New />
+          <New setToggleFetch={setToggleFetch} /> 
         </Route>  
-        <Route path="/recipe" >
-          <Recipe
+        <Route path="/recipe/:id" >
+          <Recipe 
+            cocktails={cocktails}
             shaken={shaken} 
             stirred={stirred}
           />
         </Route>  
       </main> 
-    {/* <Footer /> */}
+    <Footer />
     </div>
   );
 }
