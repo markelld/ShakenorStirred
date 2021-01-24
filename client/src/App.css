@@ -87,4 +87,14 @@ Button {
 .searchbar {
   padding: 30px;
 }
-
+ 
+.recipeform {
+  width:65vw; 
+  padding-top:40px;
+}
+/* .color-nav{
+  background-color: #031926; 
+} 
+.color-text{
+  color:#EBEBD3;
+} */

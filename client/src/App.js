@@ -5,7 +5,7 @@ import { useEffect, useState } from "react";
 import './App.css';
 
 import Home from "./components/Home";
-import Nav from "./components/Nav";  
+import Header from "./components/Header";  
 import Recipe from "./components/Recipe"; 
 import Show from "./components/Show";   
 import ShowStirred from "./components/ShowStirred";
@@ -79,7 +79,7 @@ function App() {
 
   return (
     <div className="App">  
-      <Nav
+      <Header
         handleChange={handleChange} 
         search={search} /> 
       <main className="body">

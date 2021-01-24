@@ -21,11 +21,11 @@ function Recipe(props) {
     <div className="Recipe"> 
       { cocktail && <div> 
         <Link to="/">
-          <h1>{cocktail.fields.name}</h1> 
+          <h1 className="cocktail">{cocktail.fields.name}</h1> 
         </Link>
         <h2>{cocktail.fields.type}</h2> 
-        <h2>{cocktail.fields.ingredients}</h2> 
-        <h2>{cocktail.fields.build}</h2> 
+        <h3>{cocktail.fields.ingredients}</h3> 
+        <h3>{cocktail.fields.build}</h3> 
       </div>}
    </div>
 
