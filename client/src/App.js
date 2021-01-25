@@ -66,10 +66,10 @@ function App() {
   }  
   const searchFilter = (value, cocktails) => {
     //console.log(cocktails)
-    
+      console.log(value, cocktails)
     
       const resultsSearch = cocktails.filter(cocktail => cocktail.fields.name.toLowerCase().includes(value.toLowerCase()))
-      console.log(resultsSearch)
+      // console.log(resultsSearch)
       setSearchResults(resultsSearch)
       // localStorage.setItem("searchString", value);
     

@@ -5,9 +5,14 @@ import Navbar from 'react-bootstrap/Navbar';
 import Nav from 'react-bootstrap/Nav';
 import Form from 'react-bootstrap/Form' 
 import Button from 'react-bootstrap/Button'
-import FormControl from 'react-bootstrap/FormControl'
+import FormControl from 'react-bootstrap/FormControl' 
+ 
+
 
 function Header(props) {
+  
+  
+  
   return (
     // <nav className="navbar"> 
     //   <Link className="hometext"  to="/">Shaken or Stirred?</Link> 
@@ -45,7 +50,7 @@ function Header(props) {
         value={props.search} 
         onChange={(e) => props.handleChange(e)}
         />
-        <Button variant="outline-success">Search</Button>
+        <Button variant="outline-success" >Search</Button>
       </Form>
     </Navbar.Collapse>
   </Navbar>

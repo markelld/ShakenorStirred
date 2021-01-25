@@ -11,7 +11,10 @@ main{
   display:flex; 
   justify-content: center;
   background-color:#FDFFFC;   
-  color:#031926;
+  color:#031926; 
+  /* background-image:url("./components/bar.jpg"); 
+  background-size: cover;
+  background-position: bottom; */
     
   
 }  
@@ -29,7 +32,11 @@ main{
   height: 60px;
   justify-content:space-around;
   background-color:#AE1E31;    
-  font-family: 'Advent Pro', sans-serif;  
+  font-family: 'Advent Pro', sans-serif; 
+  position: fixed;  
+  z-index: 2;  
+
+  
 }  
 /* #FF6978 */ 
 
@@ -100,9 +107,18 @@ Button {
   background-color: #031926; 
 }  */
 
-.home{
-  padding-top:120px; 
-  /* overflow-y: scroll; */ 
+.home{ 
+  display:flex; 
+  justify-content: center; 
+  align-items: flex-start;
+  padding-top:200px; 
+  /* overflow-y: scroll; */   
+  width:100vw;
+  background-image:url("./components/bar.jpg"); 
+  background-size: cover;
+  background-position: center; 
+    
+
 } 
 .shakenlist{
   padding-top:70px; 
