@@ -1,10 +1,26 @@
+import github from "./githubIcon.png"; 
+import linkedin from "./linkedin.png";
+
+
 function Footer() {
   return (
     <div className="Footer" >
-      <h1></h1>
+      <div classname="git" > 
+        <a rel="noopener noreferrer" target="_blank" href="https://github.com/markelld">
+          <img src={github} /> 
+        </a>
+      </div>
+      <div classname="linkedin"> 
+        <a rel="noopener noreferrer" target="_blank" href="https://www.linkedin.com/in/markell-dehaney-340a60105/">
+          <img src={linkedin} />
+        </a>
+      </div>
     </div>  
   )
 } 
+
+
+
 
 export default Footer; 
 

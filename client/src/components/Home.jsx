@@ -1,12 +1,13 @@
 import { Link } from "react-router-dom";
 import Search from "./Search"; 
-import Button from 'react-bootstrap/Button'
+import Button from 'react-bootstrap/Button' 
+// import bar from "./bar.jpg";
 function Home(props) {
 
 
   return ( 
     <div className="home"> 
-     <h1>home</h1>
+      {/* <img src={ bar }/> */}
       {props.searchResults && props.searchResults.map((cocktail, index) => (
         <div key={index}>{cocktail.fields.name }</div>
       ))}
