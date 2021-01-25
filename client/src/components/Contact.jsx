@@ -52,7 +52,7 @@ function Contact(props) {
         <Form.Label>Message</Form.Label>
         <Form.Control size="lg"  as="textarea" rows={3} />
       </Form.Group>  
-      <Button variant="outline-secondary" size="lg">Submit</Button>
+      <Button variant="light" size="lg">Submit</Button>
     </Form>
 
   )

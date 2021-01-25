@@ -7,7 +7,7 @@ function Show(props) {
  
   return ( 
     //create onclick inside H1 that calls function to function and links to recipe page 
-    <div className="shakelist"> 
+    <div className="shakenlist"> 
       <h1>Shaken List</h1>   
       {shaken && <div>
       {shaken.map((cocktail) => {

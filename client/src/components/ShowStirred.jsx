@@ -11,7 +11,7 @@ function ShowStirred(props) {
 
   console.log(stirred)
   return (
-    <div> 
+    <div className="stirredlist"> 
       <h1>Stirred</h1>
       {stirred && <div>
       {stirred.map((cocktail) => {

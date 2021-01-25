@@ -18,10 +18,10 @@ function Recipe(props) {
   
   
   return (
-    <div className="Recipe"> 
+    <div className="recipe"> 
       { cocktail && <div> 
         <Link to="/">
-          <h1 className="cocktail">{cocktail.fields.name}</h1> 
+          <h1 >{cocktail.fields.name}</h1> 
         </Link>
         <h2>{cocktail.fields.type}</h2> 
         <h3>{cocktail.fields.ingredients}</h3> 

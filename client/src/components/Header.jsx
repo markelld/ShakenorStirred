@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom"; 
-// import Search from "./Search" 
+import Search from "./Search" 
 import {LinkContainer} from 'react-router-bootstrap'
 import Navbar from 'react-bootstrap/Navbar'; 
 import Nav from 'react-bootstrap/Nav';
@@ -14,12 +14,12 @@ function Header(props) {
       //   handleChange={props.handleChange} 
       //   search={props.search} /> */}
     //  
-  <Navbar bg="light" expand="lg" className="color-nav" > 
+  <Navbar collapseOnSelect expand="lg" className="color-nav" > 
       <LinkContainer to="/"> 
-        <Navbar.Brand classname="color-text">Shaken or Stirred?</Navbar.Brand>
+        <Navbar.Brand className="color-nav">Shaken or Stirred?</Navbar.Brand>
       </LinkContainer>
-      <Navbar.Toggle aria-controls="basic-navbar-nav" />
-      <Navbar.Collapse id="basic-navbar-nav">
+      <Navbar.Toggle aria-controls="responsive-navbar-nav" />
+      <Navbar.Collapse id="responsive-navbar-nav">
     <Nav className="mr-auto"> 
       <LinkContainer to="/new">
         <Nav.Link>New Recipe</Nav.Link>    

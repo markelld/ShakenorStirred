@@ -79,7 +79,7 @@ function New(props) {
       size="lg"       
       placeholder=""    />
         </Form.Group> 
-        <Button type="submit">submit</Button>
+        <Button variant="light" type="submit">submit</Button>
       </Form> 
       {/* <form onSubmit={handleSubmit}>
         <h1>New Recipe</h1> 

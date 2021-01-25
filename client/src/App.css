@@ -10,7 +10,10 @@ main{
   padding-right:15px; 
   display:flex; 
   justify-content: center;
-  background-color:#FDFFFC;
+  background-color:#FDFFFC;   
+  color:#031926;
+    
+  
 }  
 
 /* .body{  
@@ -21,15 +24,14 @@ main{
 
 } */
 .navbar {
-  display: flex; 
   padding: 10px;
   width: 100vw; 
   height: 60px;
-  box-sizing: border-box;
   justify-content:space-around;
-  background-color:#031926;    
+  background-color:#AE1E31;    
   font-family: 'Advent Pro', sans-serif; 
-}   
+}  
+/* #FF6978 */
 .Footer {
   display:flex; 
   position: fixed;  
@@ -38,10 +40,10 @@ main{
   right:0;
   width: 100vw; 
   height: 80px;
-  background-color: #031926;   
+  background-color:#AE1E31;   
   z-index: 1; 
 }
-
+/* #0197F6 */
 .hometext {
   color:#EBEBD3; 
   text-decoration: none; 
@@ -80,7 +82,7 @@ Button {
 }   
 .contact {
   width:65vw; 
-  padding-top:40px; 
+  padding-top:80px; 
 
 } 
 
@@ -90,11 +92,30 @@ Button {
  
 .recipeform {
   width:65vw; 
-  padding-top:40px;
+  padding-top:80px;
 }
 /* .color-nav{
   background-color: #031926; 
+}  */
+
+.home{
+  padding-top:70px;
 } 
-.color-text{
-  color:#EBEBD3;
-} */
+.shakenlist{
+  padding-top:70px; 
+} 
+.stirredlist{
+  padding-top:70px;
+} 
+
+.recipe{
+  padding-top:70px;
+}  
+a {
+  color:#031926;
+  text-decoration: none;
+  background-color: transparent;
+} 
+.navbar-light .navbar-brand {
+  color: white;
+}
