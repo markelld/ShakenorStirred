@@ -1,3 +1,29 @@
+import Form from 'react-bootstrap/Form'  
+import Button from 'react-bootstrap/Button'
+
+
+function Contact(props) {
+  return ( 
+    <Form className="contact">
+      <Form.Group >
+        <Form.Label >Name</Form.Label>
+        <Form.Control size="lg"  type="name" placeholder="" />
+      </Form.Group> 
+      <Form.Group >
+        <Form.Label>Email</Form.Label>
+        <Form.Control size="lg"  type="email" placeholder="" />
+      </Form.Group>
+      <Form.Group >
+        <Form.Label>Message</Form.Label>
+        <Form.Control size="lg"  as="textarea" rows={3} />
+      </Form.Group>  
+      <Button variant="light" size="lg">Submit</Button>
+    </Form>
+
+  )
+} 
+export default Contact;   
+
 
 
 // function Contact(props) {
@@ -32,29 +58,4 @@
 //   )
 // } 
 
-// export default Contact;  
-import Form from 'react-bootstrap/Form'  
-import Button from 'react-bootstrap/Button'
-
-
-function Contact(props) {
-  return ( 
-    <Form className="contact">
-      <Form.Group >
-        <Form.Label >Name</Form.Label>
-        <Form.Control size="lg"  type="name" placeholder="" />
-      </Form.Group> 
-      <Form.Group >
-        <Form.Label>Email</Form.Label>
-        <Form.Control size="lg"  type="email" placeholder="" />
-      </Form.Group>
-      <Form.Group >
-        <Form.Label>Message</Form.Label>
-        <Form.Control size="lg"  as="textarea" rows={3} />
-      </Form.Group>  
-      <Button variant="light" size="lg">Submit</Button>
-    </Form>
-
-  )
-} 
-export default Contact;
+// export default Contact; 

@@ -1,13 +1,17 @@
 import { Link } from "react-router-dom";
 import Search from "./Search"; 
-import Button from 'react-bootstrap/Button' 
-// import bar from "./bar.jpg";
+import Button from 'react-bootstrap/Button'
+// import bar from "./bar.jpg"; 
+// import Image from 'react-bootstrap/Image'
+
+
 function Home(props) {
 
 
   return ( 
     <div className="home"> 
-      {/* <img src={ bar }/> */}
+      {/* <Image src= { bar }  className="homeimage"/>  */}
+
       {props.searchResults && props.searchResults.map((cocktail, index) => (
         <div key={index}>{cocktail.fields.name }</div>
       ))}
@@ -23,7 +27,7 @@ function Home(props) {
         onClick={() => props.getStirred()}><Link className="button" to="/showstirred">
           Stirred?
         </Link>
-      </Button> 
+      </Button>  
     </div> 
     </div>
     
