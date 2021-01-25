@@ -30,56 +30,56 @@ function New(props) {
   return (
     <div>
       <Form onSubmit={handleSubmit} className="recipeform" >
-  <Form.Group>
-    <Form.Label>Name</Form.Label>
-    <Form.Control  
-    name="name" 
-    type="text"
-    value={name}
-    onChange={(e) => setName(e.target.value)}    
-    size="lg"   
-    as="textarea"       
-    placeholder="" /> 
+      <Form.Group>
+      <Form.Label>Name</Form.Label>
+      <Form.Control  
+        name="name" 
+        type="text"
+        value={name}
+        onChange={(e) => setName(e.target.value)}    
+        size="lg"   
+        as="textarea"       
+        placeholder="" /> 
      
-  </Form.Group>
-  <Form.Group controlId="exampleForm.ControlSelect1">
-    <Form.Label>Type</Form.Label>
-    <Form.Control 
-      as="select"  
-      type="text"
-      value={type}
-      onChange={(e) => setType(e.target.value)}      
-      size="lg"   
-      placeholder="">
-      <option>Shaken</option>
-      <option>Stirred</option>
-    </Form.Control>
-  </Form.Group>
-  <Form.Group >
-    <Form.Label>Ingredients</Form.Label>
-    <Form.Control 
-      as="textarea" 
-      name="message"
-      type="text"
-      value={ingredients}
-      onChange={(e) => setIngredients(e.target.value)}
-      rows={3} 
-      size="lg"   
-      placeholder=""    />
-  </Form.Group> 
-  <Form.Group >
-    <Form.Label>Build</Form.Label>
-    <Form.Control  
-      as="textarea" 
-      name="message" 
-      value={build}
-       type="text"  
-       onChange={(e) => setBuild(e.target.value)}
-       rows={3}       
-      size="lg"       
-      placeholder=""    />
-        </Form.Group> 
-        <Button variant="light" type="submit">submit</Button>
+      </Form.Group>
+      <Form.Group controlId="exampleForm.ControlSelect1">
+      <Form.Label>Type</Form.Label>
+      <Form.Control 
+        as="select"  
+        type="text"
+        value={type}
+        onChange={(e) => setType(e.target.value)}      
+        size="lg"   
+        placeholder="">
+        <option>Shaken</option>
+        <option>Stirred</option>
+      </Form.Control>
+      </Form.Group>
+      <Form.Group >
+      <Form.Label>Ingredients</Form.Label>
+      <Form.Control 
+        as="textarea" 
+        name="message"
+        type="text"
+        value={ingredients}
+        onChange={(e) => setIngredients(e.target.value)}
+        rows={3} 
+        size="lg"   
+        placeholder=""    />
+      </Form.Group> 
+      <Form.Group >
+      <Form.Label>Build</Form.Label>
+      <Form.Control  
+        as="textarea" 
+        name="message" 
+        value={build}
+        type="text"  
+        onChange={(e) => setBuild(e.target.value)}
+        rows={3}       
+        size="lg"       
+        placeholder=""    />
+      </Form.Group> 
+      <Button variant="light" type="submit">submit</Button>
       </Form> 
       {/* <form onSubmit={handleSubmit}>
         <h1>New Recipe</h1> 

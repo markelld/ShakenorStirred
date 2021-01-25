@@ -5,13 +5,13 @@ import linkedin from "./linkedin.png";
 function Footer() {
   return (
     <div className="Footer" >
-      <div classname="git" > 
-        <a rel="noopener noreferrer" target="_blank" href="https://github.com/markelld">
+      <div className="git" > 
+        <a alt="git" rel="noopener noreferrer" target="_blank" href="https://github.com/markelld">
           <img src={github} /> 
         </a>
       </div>
-      <div classname="linkedin"> 
-        <a rel="noopener noreferrer" target="_blank" href="https://www.linkedin.com/in/markell-dehaney-340a60105/">
+      <div className="linkedin"> 
+        <a alt="linkedin" rel="noopener noreferrer" target="_blank" href="https://www.linkedin.com/in/markell-dehaney-340a60105/">
           <img src={linkedin} />
         </a>
       </div>

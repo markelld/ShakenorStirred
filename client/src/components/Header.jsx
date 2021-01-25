@@ -1,5 +1,5 @@
-import { Link } from "react-router-dom"; 
-import Search from "./Search" 
+// import { Link } from "react-router-dom"; 
+//import Search from "./Search" 
 import {LinkContainer} from 'react-router-bootstrap'
 import Navbar from 'react-bootstrap/Navbar'; 
 import Nav from 'react-bootstrap/Nav';

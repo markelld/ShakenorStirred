@@ -3,19 +3,19 @@
 // import FormControl from 'react-bootstrap/FormControl'
 
 
-function Search(props) {
-  return ( 
-    <input
-      type="text"
-      name="search"
-      value={props.search} 
-      onChange={(e) => props.handleChange(e)}
-      />
+// function Search(props) {
+//   return ( 
+//     <input
+//       type="text"
+//       name="search"
+//       value={props.search} 
+//       onChange={(e) => props.handleChange(e)}
+//       />
     
 
-  )
-} 
-export default Search;  
+//   )
+// } 
+// export default Search;  
 
 {/* <Form inline 
   handleChange={props.handleChange} 
