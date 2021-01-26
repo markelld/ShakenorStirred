@@ -7,17 +7,17 @@ main{
   display:flex; 
   justify-content: center;
   background-color:#FDFFFC;   
-  color:#031926; 
+  color:#031926;  
 }  
 
-.navbar {
+.navbar {  
   width: 100vw; 
   height: 60px;
   justify-content:space-around;
   background-color:#AE1E31;    
   font-family: 'Advent Pro', sans-serif; 
   position: fixed;  
-  z-index: 1;  
+  z-index: 1;   
 
   
 }  
@@ -56,6 +56,9 @@ Button {
 } 
 
  
+.searchbar {
+  padding: 30px;
+}
 .recipe-form {
   width:65vw; 
   padding-top:200px; 
@@ -68,7 +71,7 @@ Button {
   align-items:flex-start;
   padding-top:200px;   
   width:100vw; 
-  height:auto;
+  height:200vh;
   background-image:url("./components/bar.jpg"); 
   background-size:cover;
   background-position: bottom;  
@@ -130,11 +133,8 @@ a.nav-link {
   padding-left:10px;
 } 
 .navbar-nav {
-  display: flex;
-  flex-direction: column; 
-  width:100vw;
-  padding-left: 0;
-  margin-bottom: 0;
   list-style: none;
-  background:#AE1E31;
+  background:#AE1E31; 
+  padding-left: 10px;
+
 }
