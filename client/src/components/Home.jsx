@@ -12,9 +12,9 @@ function Home(props) {
     <div className="home"> 
       {/* <Image src= { bar }  className="homeimage"/>  */}
 
-      {props.searchResults && props.searchResults.map((cocktail, index) => (
+      {/* {props.searchResults && props.searchResults.map((cocktail, index) => (
         <div key={index}>{cocktail.fields.name }</div>
-      ))}
+      ))} */}
     <div className="new">
       <Button variant="light" size="lg"
         onClick={() => props.getShaken()}><Link className="button" to="/show/shaken">

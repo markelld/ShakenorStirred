@@ -6,8 +6,8 @@
 
 main{ 
   height: 200vh;
-  padding-left:15px; 
-  padding-right:15px; 
+  /* padding-left:15px; 
+  padding-right:15px;  */
   display:flex; 
   justify-content: center;
   background-color:#FDFFFC;   
@@ -34,7 +34,7 @@ main{
   background-color:#AE1E31;    
   font-family: 'Advent Pro', sans-serif; 
   position: fixed;  
-  z-index: 2;  
+  z-index: 1;  
 
   
 }  
@@ -101,7 +101,7 @@ Button {
  
 .recipeform {
   width:65vw; 
-  padding-top:80px;
+  padding-top:200px;
 }
 /* .color-nav{
   background-color: #031926; 
@@ -113,22 +113,24 @@ Button {
   align-items: flex-start;
   padding-top:200px; 
   /* overflow-y: scroll; */   
-  width:100vw;
-  background-image:url("./components/bar.jpg"); 
-  background-size: cover;
-  background-position: center; 
+  width:100vw; 
+  height:200vh;
+  background-image:url("./components/soft.jpg"); 
+  background-size:cover;
+  background-position: center;  
+  opacity:0.8;
     
 
 } 
 .shakenlist{
-  padding-top:70px; 
+  padding-top:200px; 
 } 
 .stirredlist{
-  padding-top:70px;
+  padding-top:200px;
 } 
 
 .recipe{
-  padding-top:70px;
+  padding-top:200px;
 }  
 a {
   color:#031926;
@@ -150,3 +152,26 @@ img{
   align-content: center;
 } */
 
+.contact {
+  padding-top:200px;  
+  display:inline-flex; 
+  justify-content: flex-start; 
+  align-items: center; 
+  flex-direction: column;
+  padding-top:200px;    
+  height:auto; 
+  width:100%;
+  background-image:url("./components/bar.jpg"); 
+  background-size:cover;
+  background-position:right top;  
+  color:white; 
+  text-emphasis:strong;  
+  opacity:0.7;  
+} 
+.navbar-light .navbar-nav .nav-link {
+  color:black;
+} 
+
+a.nav-link {
+  padding-left:10px;
+} 

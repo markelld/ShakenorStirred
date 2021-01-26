@@ -3,7 +3,8 @@ import Button from 'react-bootstrap/Button'
 
 
 function Contact(props) {
-  return ( 
+  return (  
+    
     <Form className="contact">
       <Form.Group >
         <Form.Label >Name</Form.Label>
@@ -19,7 +20,7 @@ function Contact(props) {
       </Form.Group>  
       <Button variant="light" size="lg">Submit</Button>
     </Form>
-
+    
   )
 } 
 export default Contact;   

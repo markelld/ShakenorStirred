@@ -30,7 +30,7 @@ function App() {
       setCocktails(resp.data.records); 
       //console.log(resp.data.records) 
       getShaken(resp.data.records) 
-      getStirred(resp.data.records)
+      getStirred(resp.data.records) 
       // if (localStorage.getItem('searchString').length > 0) { 
       
       //   searchFilter(localStorage.getItem('searchString'),resp.data.records) 
@@ -81,7 +81,9 @@ function App() {
     <div className="App">  
       <Header
         handleChange={handleChange} 
-        search={search} /> 
+        search={search}  
+        searchResults={searchResults}
+        /> 
       <main className="body">
         <Route exact path="/">
           <Home 
