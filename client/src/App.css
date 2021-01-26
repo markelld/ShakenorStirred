@@ -1,31 +1,15 @@
  .App {
   font-family: 'Advent Pro', sans-serif; 
-  /* text-align:center;   
-  height:100%; */
  }  
 
 main{ 
-  height: 200vh;
-  /* padding-left:15px; 
-  padding-right:15px;  */
+  height: 250vh;
   display:flex; 
   justify-content: center;
   background-color:#FDFFFC;   
   color:#031926; 
-  /* background-image:url("./components/bar.jpg"); 
-  background-size: cover;
-  background-position: bottom; */
-    
-  
 }  
 
-/* .body{  
-  display: flex; 
-  flex-direction:column; 
-  text-align:center;  
-  height: 100%;
-
-} */
 .navbar {
   width: 100vw; 
   height: 60px;
@@ -51,31 +35,8 @@ main{
   /* z-index: 1;   */
   justify-content: space-evenly; 
 }
-/* #0197F6 */
-.hometext {
-  color:#EBEBD3; 
-  text-decoration: none; 
-  font-size: 20px; 
-  padding-bottom: 10px; 
-  font-weight: bold;
-}   
-.searchbar {
-  padding-right: 20px; 
-  border-radius: 10px;
-} 
 
-  /* button{
-  padding: 15px 25px; 
-  font-size: 12px;
-  cursor: pointer;
-  outline: none;
-  color: white;
-  background-color:#CE4257;
-  border: none;
-  border-radius: 15px;
-  box-shadow: 0 2px #999; 
-  font-weight: bold;  
-}   */
+
 
 Button {
   text-decoration: none;   
@@ -94,26 +55,20 @@ Button {
 
 } 
 
-.searchbar {
-  padding: 30px;
-}
  
-.recipeform {
+.recipe-form {
   width:65vw; 
-  padding-top:200px;
+  padding-top:200px; 
 }
-/* .color-nav{
-  background-color: #031926; 
-}  */
+
 
 .home{ 
   display:flex; 
   justify-content: center; 
-  align-items: flex-start;
-  padding-top:200px; 
-  /* overflow-y: scroll; */   
+  align-items:flex-start;
+  padding-top:200px;   
   width:100vw; 
-  height:200vh;
+  height:auto;
   background-image:url("./components/bar.jpg"); 
   background-size:cover;
   background-position: bottom;  
@@ -121,20 +76,22 @@ Button {
     
 
 } 
-.shakenlist{
-  padding-top:200px; 
+
+.shaken-list{
+  padding-top:220px;  
+ 
 } 
-.stirredlist{
-  padding-top:200px;
+.stirred-list{
+  padding-top:220px;
 } 
 
 .recipe{
   padding-top:200px; 
   padding-left:10px; 
-  padding-right:10px;
+  padding-right:10px; 
 }  
 a {
-  color:#031926;
+  color:#AE1E31;
   text-decoration: none;
   background-color: transparent;
 } 
@@ -147,11 +104,7 @@ img{
   padding-top: 20px; 
   
 } 
-/* .homeimage {
-  width: 100%; 
-  height:100%; 
-  align-content: center;
-} */
+
 
 .contact {
   padding-top:200px;  
@@ -176,3 +129,12 @@ img{
 a.nav-link {
   padding-left:10px;
 } 
+.navbar-nav {
+  display: flex;
+  flex-direction: column; 
+  width:100vw;
+  padding-left: 0;
+  margin-bottom: 0;
+  list-style: none;
+  background:#AE1E31;
+}

@@ -26,10 +26,10 @@ function New(props) {
     history.push("/")
   };
 
-  //set state for each
+  
   return (
     <div>
-      <Form onSubmit={handleSubmit} className="recipeform" >
+      <Form onSubmit={handleSubmit} className="recipe-form" >
       <Form.Group>
       <Form.Label>Name</Form.Label>
       <Form.Control  
@@ -81,49 +81,6 @@ function New(props) {
       </Form.Group> 
       <Button variant="light" type="submit">submit</Button>
       </Form> 
-      {/* <form onSubmit={handleSubmit}>
-        <h1>New Recipe</h1> 
-        <label htmlFor="name">Name:</label> 
-        <input
-          name="name"
-          type="text"
-          value={name}
-          onChange={(e) => setName(e.target.value)}
-        />
-        <label htmlFor="type">Type:</label> 
-        <input
-          name="name"
-          type="text"
-          value={type}
-          onChange={(e) => setType(e.target.value)}
-        /> 
-        <label> Type
-          <select
-            name="name" 
-            type="text"
-            value={type}
-            onChange={(e) => setType(e.target.value)}
-          >
-            <option>Shaken</option> 
-            <option>Stirred</option>
-          </select>
-        </label>
-        <label htmlFor="ingredients">Ingredients:</label> 
-        <input
-          name="message"
-          type="text"
-          value={ingredients}
-          onChange={(e) => setIngredients(e.target.value)}
-        /> 
-        <label htmlFor="build">Build:</label> 
-        <input
-          name="message"
-          type="text"
-          value={build}
-          onChange={(e) => setBuild(e.target.value)}
-        />
-        <button type="submit">submit</button>
-      </form> */}
     </div>
   )
 } 

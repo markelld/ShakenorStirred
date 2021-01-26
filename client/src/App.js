@@ -44,18 +44,17 @@ function App() {
     let data = shakenData || cocktails
     const resultsShaken = data.filter(cocktail => cocktail.fields.type === "Shaken")
     setShaken(resultsShaken)
-    //const shakenCocktails = shaken
   }  
 // function for stirred home button to search cocktail data and go to showpage 
   const getStirred = (stirredData) => {
     let data = stirredData || cocktails 
     const resultsStirred = data.filter(cocktail => cocktail.fields.type === "Stirred") 
     setStirred(resultsStirred) 
-    //const stirredCocktails = stirred
+    
   }
 
   const handleChange = (e) => { 
-    //console.log(e.target.value) 
+    
     setSearch(e.target.value)
 
     if (e.target.value.length > 2) {
@@ -65,13 +64,13 @@ function App() {
     }
   }  
   const searchFilter = (value, cocktails) => {
-    //console.log(cocktails)
+    
       console.log(value, cocktails)
     
       const resultsSearch = cocktails.filter(cocktail => cocktail.fields.name.toLowerCase().includes(value.toLowerCase()))
-      // console.log(resultsSearch)
+      
       setSearchResults(resultsSearch)
-      // localStorage.setItem("searchString", value);
+      
     
      
     }

@@ -1,4 +1,3 @@
-//import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 
 function Show(props) { 
@@ -6,13 +5,11 @@ function Show(props) {
   const { shaken, getShaken } = props  
  
   return ( 
-    //create onclick inside H1 that calls function to function and links to recipe page 
-    <div className="shakenlist"> 
+    <div className="shaken-list"> 
       <h1>Shaken</h1>   
       {shaken && <div>
       {shaken.map((cocktail) => {
         return (<Link key={cocktail.id} to={`/recipe/${cocktail.id}`}><div
-          //onClick={() => ........()} link tags goes around cocktail.field.name
           >{cocktail.fields.name}</div></Link>)
       })}</div>}  
     </div>

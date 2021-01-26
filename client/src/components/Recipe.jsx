@@ -7,10 +7,6 @@ function Recipe(props) {
   const params = useParams()
   console.log(params)
   
-  // const { shaken, getShaken } = props  
-  // const { stirred, getStirred } = props 
-  // const { cocktails, setCocktails} = props
-  
   
   
   const cocktail = props.cocktails.find(cocktail => cocktail.id === params.id)
