@@ -2,11 +2,12 @@
 
 ## Project Name
 
-Shaken or Stirred ?
+Shaken or Stirred ? 
+https://sors.netlify.app
 
 ## Project Description
 
-This site consists of a catalog of classic coctails and Foxbar creations in two catagories Shaken or Stirred. The site has the functionality to edit, post and delete cocktail recipes.  
+This site consists of a catalog of classic coctails and Foxbar creations in two catagories Shaken or Stirred. The site has the functionality to get,post and delete cocktail recipes.  
 
 ## Wireframes
 ![Wireframes](https://github.com/markelld/ShakenorStirred/blob/main/wireframes.png)
@@ -52,12 +53,12 @@ This schedule will be used to keep track of your progress throughout the week an
 |  Day | Deliverable | Status
 |---|---| ---|
 |July 10-12| Prompt / Wireframes / Priority Matrix / Timeframes | Incomplete
-|July 13| Project Approval | Incomplete
+|July 13| Project Approval | complete
 |July 13| Core Application Structure (HTML, CSS, etc.) | Incomplete
-|July 14| Pseudocode / actual code | Incomplete
-|July 15| Initial Clickable Model  | Incomplete
-|July 16| MVP | Incomplete
-|July 17| Presentations | Incomplete
+|July 14| Pseudocode / actual code | complete
+|July 15| Initial Clickable Model  | complete
+|July 16| MVP | complete
+|July 17| Presentations | complete
 
 ## Timeframes
 
