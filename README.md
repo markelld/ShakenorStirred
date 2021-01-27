@@ -3,11 +3,12 @@
 ## Project Name
 
 Shaken or Stirred ? 
-https://sors.netlify.app
+
+shorst.netlify.app
 
 ## Project Description
 
-This site consists of a catalog of classic coctails and Foxbar creations in two catagories Shaken or Stirred. The site has the functionality to get,post and delete cocktail recipes.  
+This site consists of a catalog of classic coctails and Foxbar creations in two catagories Shaken or Stirred. The site has the functionality to get,post and cocktail recipes.  
 
 ## Wireframes
 ![Wireframes](https://github.com/markelld/ShakenorStirred/blob/main/wireframes.png)
@@ -52,9 +53,9 @@ This schedule will be used to keep track of your progress throughout the week an
 
 |  Day | Deliverable | Status
 |---|---| ---|
-|July 10-12| Prompt / Wireframes / Priority Matrix / Timeframes | Incomplete
+|July 10-12| Prompt / Wireframes / Priority Matrix / Timeframes | complete
 |July 13| Project Approval | complete
-|July 13| Core Application Structure (HTML, CSS, etc.) | Incomplete
+|July 13| Core Application Structure (HTML, CSS, etc.) | complete
 |July 14| Pseudocode / actual code | complete
 |July 15| Initial Clickable Model  | complete
 |July 16| MVP | complete
@@ -64,18 +65,18 @@ This schedule will be used to keep track of your progress throughout the week an
 
 | Component | Priority | Estimated Time | Time Invested | Actual Time |
 | --- | :---: |  :---: | :---: | :---: |
-|Entering data in Airtable| H | 3hrs|  |  |
-| making file structure| H | 1hrs| | | 
-| setting up api| H | 2hrs| | |
-| making search bar| H | 3hrs| | |
-| creating buttons | H | 3hrs| | |
-| creating form | H | 2hrs| | |
-| creating contact page| H | 3hrs| | |
-| make routes and links| H | 3hrs| | |
-| creating footer component| H | 2hrs| | |
-| styling components | H | 2hrs| | |
-| make site responsive| H | 2hrs| | | 
-| total | H | 27hrs |  |  |  
+|Entering data in Airtable| H | 3hrs| 3hrs | 3hrs |
+| making file structure| H | 1hrs| 2hrs| 2hrs | 
+| setting up api| H | 2hrs | 2hrs | 2hrs |
+| making search bar| H | 3hrs| 5hrs | 5hrs |
+| creating buttons | H | 3hrs| 3hrs | 3hrs |
+| creating forms | H | 3hrs| 5hrs | 5hrs |
+| creating contact page| H | 3hrs| 3hrs | 3hrs |
+| make routes and links| H | 3hrs| 4hrs | 4hrs |
+| creating footer component| H | 2hrs| 2hrs | 3hrs |
+| styling components | H | 2hrs| 5hrs | 5hrs |
+| make site responsive| H | 2hrs| 4hrs | 4hrs | 
+| total | H | 27hrs | 35hrs | 35hrs  |  
 
 ## SWOT Analysis
 
