@@ -1,5 +1,5 @@
-import github from "./githubIcon.png"; 
-import linkedin from "./linkedin.png";
+import github from "../media/githubIcon.png"; 
+import linkedin from "../media/linkedin.png";
 
 
 function Footer() {
@@ -24,10 +24,3 @@ function Footer() {
 
 export default Footer; 
 
-{/* <div class="Footer">    
-  <a rel="noopener noreferrer"
-      target="_blank"
-      href="https://github.com/markelld"> 
-      <img  class="github" src="githubIcon.png"  alt="Github" >
-  </a>
-</div> */}

@@ -71,7 +71,7 @@ Button {
   align-items:flex-start;
   padding-top:200px;   
   width:100vw; 
-  height:200vh;
+  height:auto;
   background-image:url("./components/bar.jpg"); 
   background-size:cover;
   background-position: bottom;  
