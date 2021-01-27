@@ -2,9 +2,8 @@
 
 ## Project Name
 
-Shaken or Stirred ? 
-
-shorst.netlify.app
+Shaken or Stirred ?  
+![Wireframes](shorst.netlify.app)
 
 ## Project Description
 
