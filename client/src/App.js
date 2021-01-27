@@ -20,22 +20,16 @@ function App() {
   const [searchResults, setSearchResults] = useState([]);
   const [search, setSearch] = useState("");  
   const [toggleFetch, setToggleFetch] = useState(false)
-  //const [toggle, setToggle] = useState(false);
 
-  // const history = useHistory();useHistory import react router dom
   
   useEffect(() => { 
     const getCocktails = async () => {
       const resp = await axios.get(baseURL, config); 
       setCocktails(resp.data.records); 
-      //console.log(resp.data.records) 
+       
       getShaken(resp.data.records) 
       getStirred(resp.data.records) 
-      // if (localStorage.getItem('searchString').length > 0) { 
       
-      //   searchFilter(localStorage.getItem('searchString'),resp.data.records) 
-  
-      // } 
     } 
     getCocktails();   
   }, [toggleFetch]); 

@@ -10,7 +10,8 @@ main{
   color:#031926;  
 }  
 
-.navbar {  
+.navbar {   
+  display: inline-flex;
   width: 100vw; 
   height: 60px;
   justify-content:space-around;
