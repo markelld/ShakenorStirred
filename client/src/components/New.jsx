@@ -79,7 +79,7 @@ function New(props) {
         size="lg"       
         placeholder=""    />
       </Form.Group> 
-      <Button variant="light" type="submit">submit</Button>
+      <Button variant="danger" type="submit">submit</Button>
       </Form> 
     </div>
   )
