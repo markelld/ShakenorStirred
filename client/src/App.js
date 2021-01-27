@@ -108,7 +108,7 @@ function App() {
             cocktails={cocktails}
             shaken={shaken} 
             stirred={stirred} 
-            // setToggleFetch={setToggleFetch}
+            setToggleFetch={setToggleFetch}
           />
         </Route>  
       </main> 
