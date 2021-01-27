@@ -1,7 +1,5 @@
 # Project Overview
 
-# shorst.netlify.app
-
 ## Project Name
 
 Shaken or Stirred ?  
