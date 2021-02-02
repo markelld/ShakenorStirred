@@ -43,7 +43,7 @@ function Header(props) {
           />
           <Button variant="danger" >Search</Button>
           
-        </Form>
+        </Form>  
       </Navbar.Collapse>
       {props.searchResults && props.searchResults.map((cocktail, index) => {
           return (
