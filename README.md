@@ -8,7 +8,7 @@ Shaken or Stirred ?
 
 ## Project Description
 
-This site consists of a catalog of classic coctails and Foxbar creations in two catagories Shaken or Stirred. The site has the functionality to get,post and cocktail recipes.  
+This site consists of a catalog of classic coctails and Foxbar creations in two catagories Shaken or Stirred. The site has the functionality to get,delete and post cocktail recipes.  
 
 ## Wireframes
 ![Wireframes](https://github.com/markelld/ShakenorStirred/blob/main/wireframes.png)
